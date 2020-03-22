@@ -13,14 +13,39 @@
   }
 
   &__logo {
+    display: flex;
+    align-items: center;
     margin-right: 40px;
-    img {
-      width: 100%;
-      height: auto;
+    text-align: center;
+    span {
+      display: block;
+      font-size: 18px;
+    }
+    strong {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      display: block;
     }
   }
-  &__logo-link {
-    max-width: 240px;
+  &__logo-name {
+    align-items: center;
+    margin-left: 10px;
+  }
+  &__logo-box {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo-img {
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
   }
 
   &__menu {
@@ -33,7 +58,7 @@
 
   &__menu-item {
     & + & {
-      margin-left: 50px;
+      margin-left: 65px;
     }
     font-size: 18px;
     line-height: 23px;
@@ -62,7 +87,7 @@
   }
 
   &__btn {
-    margin-right: 45px;
+    margin-right: 80px;
   }
 
   &__info {
@@ -72,10 +97,44 @@
   &__info-phone {
     font-size: 22px;
     line-height: 20px;
+    margin-bottom: 5px;
   }
 
   &__info-text {
     font-size: 14px;
     line-height: 18px;
+  }
+}
+.main-screen {
+  &__bg {
+    min-height: 671px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+
+  }
+  &__content {
+    max-width: 390px;
+    width: 100%;
+  }
+
+  &__content-icon {
+    max-width: 186px;
+    height: 183px;
+    margin-bottom: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 42px;
+    color: #fff;
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
   }
 }

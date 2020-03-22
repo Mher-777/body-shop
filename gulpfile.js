@@ -49,10 +49,10 @@ gulp.task('script', function () {
         'node_modules/wow.js/dist/wow.js',
         'node_modules/swiper/js/swiper.js',
     ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'))
-    
+        .pipe(concat('libs.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('app/js'))
+
 });
 
 gulp.task('js', function () {

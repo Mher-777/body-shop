@@ -26,38 +26,46 @@ ul {
 
 li {
   display: inline-block;
-
 }
 
-form, input, button, select, option {
+form,
+input,
+button,
+select,
+option {
   outline: none;
 }
 
 img {
-  display: block;
+  vertical-align: top;
 }
 
 body {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
-.container{
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
+.container {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
 }
-.slick-slide, .slick-slide * {
-  outline: none !important;
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.button{
+.button {
   padding: 13px 17px;
-  background-color: #9F3E2E;
+  background-color: #9f3e2e;
   font-size: 18px;
   font-weight: 700;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-  transition: .3s all;
-  &:hover{
-    background-color: #E75E48;
+  transition: 0.3s all;
+  &:hover {
+    background-color: #e75e48;
   }
 }

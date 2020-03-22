@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кузовная мастерская Region-73</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Marmelad|PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/libs.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -14,11 +17,15 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">
-                    <a href="#" class="header__logo-link">
-                        <img src="./images/logo.png" alt="logo">
-                    </a>
-                </div>
+                <a href="#" class="header__logo">
+                    <div class="header__logo-box">
+                        <img src="./images/logo.svg" alt="" class="header__logo-img">
+                    </div>
+                    <div class="header__logo-name">
+                        <span>Кузовная мастерская</span>
+                        <strong>Region-73</strong>
+                    </div>
+                </a>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
@@ -44,6 +51,22 @@
             </div>
         </div>
     </header>
+
+    <main class="main-screen">
+        <div class="main-screen__bg" style="background-image: url(./images/main-screen__bg.jpg);">
+            <div class="container">
+                <div class="main-screen__content">
+                    <div class="main-screen__content-icon">
+                        <img src="./images/icons/main-screen__icon.svg" alt="">
+                    </div>
+                    <h2 class="main-screen__title">
+                        Уникальные запчасти
+                        для ретро автомобилей
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.js"></script>
