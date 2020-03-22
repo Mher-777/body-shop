@@ -1,4 +1,81 @@
-@import 'global';
-@import 'vars';
-@import 'fonts';
-@import 'animation';
+@import "global";
+@import "vars";
+@import "fonts";
+@import "animation";
+.header {
+  background-color: $color-bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+    color: #fff;
+  }
+
+  &__logo {
+    margin-right: 40px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__logo-link {
+    max-width: 240px;
+  }
+
+  &__menu {
+    margin-right: auto;
+  }
+
+  &__menu-list {
+    display: flex;
+  }
+
+  &__menu-item {
+    & + & {
+      margin-left: 50px;
+    }
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &__menu-link {
+    position: relative;
+    transition: 0.3s all;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: $color-red;
+      transform: scale(0);
+      transition: 0.3s all;
+    }
+    &:hover {
+      color: $color-red;
+      &::before {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__btn {
+    margin-right: 45px;
+  }
+
+  &__info {
+    font-weight: 700;
+  }
+
+  &__info-phone {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  &__info-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
