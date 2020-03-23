@@ -1,4 +1,13 @@
-$color-red: #9F3E2E;
+$color-red: #9f3e2e;
 $color-bg: #343320;
-$color-green: #47743E;
-$color-orange : #EBA734;
+$color-green: #47743e;
+$color-orange: #eba734;
+$color-gray: #4b4a4b;
+
+@mixin triangle-bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 9px 0 9px;
+  border-color: #4b4a4b transparent transparent transparent;
+}
