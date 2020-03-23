@@ -575,8 +575,9 @@
     width: 100%;
   }
 }
-.contact {
+.support {
   background-color: $color-bg;
+  padding-bottom: 65px;
   &__inner {
     background-color: $color-gray;
     padding: 40px;
@@ -608,7 +609,6 @@
     line-height: 42px;
     font-weight: 400;
     margin-bottom: 50px;
-
   }
 
   &__content-btn {
@@ -620,6 +620,50 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:  center;
+    background-position: center;
+  }
+}
+.advantages {
+  background-color: $color-bg;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: #fff;
+    margin-bottom: 45px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+  }
+
+  &__item {
+    max-width: 277px;
+    width: 100%;
+    border: 1.5px solid #fff;
+    padding: 15px 58px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__item-icon {
+    display: inline-block;
+    width: 64px;
+    height: 62.97px;
+    margin-bottom: 5px;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__item-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
