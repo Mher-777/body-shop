@@ -1,7 +1,7 @@
 $color-red: #9f3e2e;
 $color-bg: #343320;
 $color-green: #47743e;
-$color-orange: #eba734;
+$color-orange: #EBA734;
 $color-gray: #4b4a4b;
 
 @mixin triangle-bottom {
@@ -10,4 +10,36 @@ $color-gray: #4b4a4b;
   border-style: solid;
   border-width: 25px 9px 0 9px;
   border-color: #4b4a4b transparent transparent transparent;
+}
+@mixin title-decor {
+  position: relative;
+  overflow: hidden;
+  padding: 13.5px 10px;
+  text-align: center;
+  border: 0.5px solid #000;
+   cursor: pointer;
+  strong {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    display: block;
+  }
+  span {
+    max-width: 1152px;
+    width: 100%;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/arrow-bottom.svg);
+    width: 24px;
+    height: 24px;
+    left: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
 }
