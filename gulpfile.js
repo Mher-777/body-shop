@@ -24,6 +24,7 @@ gulp.task('style', function () {
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/animate.css/animate.css',
         'node_modules/swiper/css/swiper.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
     ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -48,6 +49,7 @@ gulp.task('script', function () {
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/wow.js/dist/wow.js',
         'node_modules/swiper/js/swiper.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

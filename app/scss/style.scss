@@ -13,23 +13,9 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
     margin-right: 40px;
-    text-align: center;
-    span {
-      display: block;
-      font-size: 18px;
-    }
-    strong {
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 24px;
-      display: block;
-    }
   }
   &__logo-name {
-    align-items: center;
     margin-left: 10px;
   }
   &__logo-box {
@@ -42,12 +28,6 @@
     align-items: center;
     justify-content: center;
   }
-  &__logo-img {
-    height: 49px;
-    width: 49px;
-    border-radius: 50%;
-  }
-
   &__menu {
     margin-right: auto;
   }
@@ -665,5 +645,417 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+  }
+}
+.partners {
+  background-color: $color-bg;
+  padding-bottom: 65px;
+  &__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 340px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 171px;
+  }
+}
+.questions-answers {
+  background-color: $color-bg;
+  padding-bottom: 30px;
+  &__title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+
+  &__inner {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__info {
+    color: #fff;
+    max-width: 355px;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  &__info-top {
+    position: relative;
+    padding-left: 42px;
+  }
+
+  &__number {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: $color-orange;
+    color: $color-bg;
+    font-weight: 700;
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__subtitle {
+    line-height: 23px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    padding-left: 42px;
+    line-height: 20px;
+    color: #ededed;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: $color-orange;
+      left: 10px;
+      top: 5px;
+    }
+  }
+}
+.customers-vehicle {
+  background-color: $color-bg;
+  &__slider {
+    max-width: 980px;
+    margin: 0 auto;
+    min-height: 220px;
+  }
+
+  &__image {
+    border: 1px solid #000;
+    min-height: 175px;
+    background-repeat: no-repeat;
+    background-size: 112%;
+    background-position: center;
+    width: 280px;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  &__title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+  .slick-active.slick-center {
+    width: 350px;
+    min-height: 220px;
+    margin-top: 0;
+    transition: 0.3s linear;
+  }
+  &__arrows {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+  }
+}
+.arrow-right {
+  left: 0;
+  margin-left: -80px;
+}
+.arrow-left {
+  right: 0;
+  margin-right: -80px;
+}
+.employee {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: $color-bg;
+  &__top {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &__top-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 400px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+
+  &__top-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__inner {
+    color: #fff;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 35px;
+  }
+
+  &__items {
+    display: flex;
+    padding: 0 60px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 180px;
+    height: 127px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &:hover {
+      .employee__item-box {
+        opacity: 1;
+      }
+    }
+  }
+  &__item-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-orange, 0.3);
+    opacity: 0;
+    transition: 0.3s all;
+  }
+}
+.contact {
+  &__bg {
+    min-height: 786px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 95px;
+  }
+
+  &__inner {
+    display: inline-block;
+    padding-top: 155px;
+  }
+
+  &__form {
+    max-width: 380px;
+    width: 100%;
+    background-color: rgba(#000, 0.8);
+  }
+
+  &__form-box {
+    color: #fff;
+    padding: 20px;
+  }
+
+  &__form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+
+  &__form-input {
+    display: block;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 5px 20px;
+    width: 100%;
+    border: 1px solid #000;
+    &::placeholder {
+      font-size: 14px;
+      color: #4a4a4a;
+    }
+  }
+
+  &__form-textarea {
+    border: 1px solid #000;
+    height: 86.5px;
+    padding: 8px 20px;
+    display: block;
+    width: 100%;
+    resize: none;
+    outline: none;
+    &::placeholder {
+      color: #4a4a4a;
+      font-size: 14px;
+    }
+  }
+
+  &__form-input-file {
+    cursor: pointer;
+    padding-left: 25px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 19px;
+      height: 20px;
+      left: 0;
+      background-image: url(../images/icons/contact-icon-file.svg);
+      background-repeat: no-repeat;
+      background-size: 93%;
+      background-position: center;
+    }
+  }
+  .jq-file__browse {
+    border-bottom: 1px dashed #fff;
+    display: inline-block;
+  }
+  label {
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    max-width: 290px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+  &__form-checkbox {
+    width: 19px;
+    height: 19px;
+    border: 1px solid #000;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(../images/icons/checkbox-icon.svg);
+    position: absolute;
+    left: 0;
+    &.checked {
+      background-image: none;
+    }
+  }
+  &__form-btn {
+    width: 100%;
+    color: #fff;
+    padding: 15px 17px;
+  }
+}
+.footer {
+  color: #fff;
+  &__top {
+    background-color: #1a1a1a;
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+  }
+  &__logo-box {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo-name {
+    margin-left: 10px;
+  }
+  &__logo {
+    margin-right: 40px;
+  }
+  &__menu {
+    margin-right: auto;
+  }
+
+  &__menu-item {
+    & + & {
+      margin-left: 65px;
+    }
+  }
+  &__btn {
+    margin-right: 80px;
+  }
+
+  &__info {
+    font-weight: 700;
+  }
+
+  &__info-phone {
+    font-size: 22px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  &__info-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__copy {
+    background-color: $color-bg;
+  }
+
+  &__copy-inner {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  &__copy-right {
+    max-width: 570px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 45px;
+    span {
+      display: block;
+    }
+  }
+
+  &__copy-author {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    span {
+      text-decoration-line: underline;
+      color: $color-red;
+    }
   }
 }
