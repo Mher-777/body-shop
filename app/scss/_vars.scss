@@ -31,15 +31,5 @@ $color-gray: #4b4a4b;
     max-width: 1152px;
     width: 100%;
   }
-  &::before{
-    content: '';
-    position: absolute;
-    background-image: url(../images/icons/arrow-bottom.svg);
-    width: 24px;
-    height: 24px;
-    left: 23px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-  }
+  
 }

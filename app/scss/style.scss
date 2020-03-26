@@ -2,14 +2,60 @@
 @import "vars";
 @import "fonts";
 @import "animation";
+@import "custom";
 .header {
   background-color: $color-bg;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  &__btn--mobile{
+    display: none;
+  }
+  &__hamburger {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: none;
+    height: 39px;
+    width: 44px;
+  }
+  &__hamburger--active{
+
+    .line-1{
+      transform: translateY(9px) rotate(45deg);
+    }
+    .line-2{
+      opacity: 0;
+    }
+    .line-3{
+      transform: translateY(-9px) rotate(-45deg);
+    }
+    .header__hamburger-line{
+      margin-bottom: 0;
+    }
+  }
+  &__hamburger-line {
+    display: block;
+    width: 28px;
+    height: 1px;
+    margin-bottom: 7px;
+    background-color: #ddd;
+    transition: all 0.3s ease-in-out;
+    margin: 8px auto;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
     color: #fff;
+  }
+  &--sticky {
+    position: fixed;
   }
 
   &__logo {
@@ -742,7 +788,8 @@
 .customers-vehicle {
   background-color: $color-bg;
   &__slider {
-    max-width: 980px;
+    // max-width: 980px;
+    padding: 0 100px;
     margin: 0 auto;
     min-height: 220px;
   }
@@ -784,11 +831,9 @@
 }
 .arrow-right {
   left: 0;
-  margin-left: -80px;
 }
 .arrow-left {
   right: 0;
-  margin-right: -80px;
 }
 .employee {
   padding-top: 100px;
@@ -1059,3 +1104,4 @@
     }
   }
 }
+@import "media";
